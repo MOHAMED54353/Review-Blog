@@ -219,7 +219,7 @@ header {
 .articles-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     width: 90%;
     margin: 3.5rem auto;
 }
@@ -337,6 +337,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px 0;
 }
 
 .articles-right .articles-trinding {
@@ -367,17 +368,58 @@ header {
     transform: translate(-5px, -5px);
     box-shadow: 10px 10px 0 black;
 }
+
+.articles-right .articles-trinding h5:hover {
+    color: #f30e0e;
+    transition: color 0.3s ease;
+}
+
+
 .articles-right .articles-trinding .articles-trinding-content {
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
-.articles-trinding-text h5{
+
+.articles-trinding-content .num {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    color: #fb2c36;
+}
+
+.articles-trinding-text h5 {
     font-size: 18px;
     line-height: 24px;
+    /* margin: 10px 0; */
+}
+
+.articles-trinding-content .articles-trinding-text p {
+    font-size: 14px;
     margin: 10px 0;
 }
-.articles-trinding-text p{
-    font-size: 12px;
+.articles-category{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px;
+    border: 4px solid black;
+    box-shadow: 5px 5px 0 black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.articles-category h4{
     margin: 10px 0;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 34px;
+}
+.articles-category span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: #DBFCE7;
+    padding: 15px ;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
 }
