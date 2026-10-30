@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
 body {
     font-family: "Exo", sans-serif;
 }
@@ -57,14 +57,14 @@ header {
 }
 
 .navbar .logo {
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: 800;
     line-height: 36px;
 }
 
 .navbar .logo a {
     text-decoration: none;
-    color: #000;
+    color: #003270;
 }
 
 .navbar .logo span {
