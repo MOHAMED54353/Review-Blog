@@ -68,14 +68,7 @@ const nav = document.getElementById("nav");
 document.querySelector(".menu-btn").onclick = () => nav.classList.toggle("open");
 document.querySelectorAll(".nav-links a").forEach(a => a.onclick = () => nav.classList.remove("open"));
 ```
-
 The menu closes automatically when a link is clicked.
-
-## Known Limitations
-
-- Buttons ("Subscribe", "Load more", "Join now") and the newsletter form are visual only and have no backend or handlers yet.
-- Social links point to `#`.
-- Dates and copyright in the footer are static text.
 
 ## Roadmap
 
