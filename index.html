@@ -39,6 +39,7 @@
                     Subscribe Now
                 </button>
             </div>
+            <button class="menu-btn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
 
@@ -435,7 +436,11 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        const nav = document.getElementById("nav");
+        document.querySelector(".menu-btn").onclick = () => nav.classList.toggle("open");
+        document.querySelectorAll(".nav-links a").forEach(a => a.onclick = () => nav.classList.remove("open"));
+    </script>
 </body>
 
 </html>
