@@ -687,14 +687,14 @@ header {
 .community-left {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 48%;
 }
 
 .community-left h4 {
     font-size: 36px;
     font-weight: 900;
     line-height: 40px;
-    margin: 40px 0;
+    margin: 30px 0;
     text-transform: uppercase;
 }
 
@@ -742,25 +742,92 @@ header {
     line-height: 28px;
 }
 
-.community-left .community-icon button {
-    display: inline-block;
-    width: 370px;
-    height: 80px;
-    padding: 24px 48px;
-    margin: 20px 0;
+.community-icon button {
     background-color: black;
-    box-shadow: 6px 6px 0 black;
+    width: 62%;
     color: white;
+    padding: 25px 40px;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
-    cursor: pointer;
+    margin: 20px 0;
+    box-shadow: 6px 6px 0 black;
     transition: all 0.3s ease;
 }
 
-.community-left .community-icon button:hover {
+.community-icon button:hover {
     background-color: #f3aa00;
     color: black;
-    transform: translate(5px, 5px);
+    transform: translate(3px, 3px);
     box-shadow: 0 0 0 black;
+}
+
+.community-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-self: flex-start;
+    width: 48%;
+    padding: 40px 35px;
+    margin: 30px 0;
+    background-color: #fff;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0 black;
+}
+
+.community-right h4 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.community-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 20px;
+    border: 2px solid black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-articles:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0 black;
+}
+
+.community-right .community-articles p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.community-author {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.community-author img {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.community-info h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.community-info span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #525252;
 }
