@@ -72,7 +72,8 @@ header {
     color: #ff6900;
 }
 
-.navbar .nav-btn button {
+.navbar .nav-btn button,
+.nav-sub button {
     padding: 10px 20px;
     background-color: #FFD15B;
     border: 2px solid black;
@@ -80,16 +81,21 @@ header {
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
-    font-weight: Bold;
+    font-weight: bold;
     text-transform: uppercase;
     color: #000000;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.navbar .nav-btn button:hover {
+.navbar .nav-btn button:hover,
+.nav-sub button:hover {
     transform: translate(5px, 5px);
     background-color: #f3aa00;
+}
+
+.nav-sub {
+    display: none;
 }
 
 .hero {
@@ -998,6 +1004,14 @@ header {
         display: block;
     }
 
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-sub {
+        display: block;
+    }
+
     .nav-links {
         display: none;
         position: absolute;
@@ -1075,11 +1089,6 @@ header {
 
     .navbar .logo {
         font-size: 22px;
-    }
-
-    .navbar .nav-btn button {
-        padding: 8px 14px;
-        font-size: 14px;
     }
 
     .hero .container .hero-content h1 {
