@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Exo", sans-serif;
 }
@@ -153,11 +154,11 @@ header {
 
 .hero .container .hero-img img {
     display: block;
-    object-fit: center;
+    object-fit: cover;
     width: 140%;
     height: 390px;
     border: 4px solid black;
-    box-shadow: 10px 10px 0 black;
+    box-shadow: 7px 7px 0 black;
     transform: rotate(2deg);
 }
 
@@ -538,6 +539,7 @@ header {
     transform: translate(-5px, -5px);
     box-shadow: 7px 7px 0 black;
 }
+
 .author-card img {
     width: 40%;
     object-fit: cover;
@@ -549,6 +551,7 @@ header {
     font-weight: 900;
     line-height: 36px;
 }
+
 .author-card:hover h4 {
     color: #f3aa00;
 }
@@ -622,21 +625,119 @@ header {
     transform: translate(-3px, -3px);
     box-shadow: 4px 4px 0 black;
 }
+
 .author-icon a:nth-of-type(1):hover {
     background-color: #3b5998;
     color: white;
     transform: translate(-3px, -3px);
     box-shadow: 4px 4px 0 black;
 }
+
 .author-icon a:nth-of-type(2):hover {
     background-color: #1DA1F2;
     color: white;
     transform: translate(-3px, -3px);
     box-shadow: 4px 4px 0 black;
 }
+
 .author-icon a:nth-of-type(3):hover {
     background-color: #E1306C;
     color: white;
     transform: translate(-3px, -3px);
     box-shadow: 4px 4px 0 black;
+}
+.community-container {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    width: 90%;
+}
+
+.community-container h3 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.community-container p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #525252;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.community hr {
+    width: 20%;
+    border: 4px solid black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.community-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.community-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.community-left h4 {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+
+.community-left p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #000;
+    text-align: left;
+    background-color: #fff;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0 black;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.community-left .community-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.community-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.community-item i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 66px;
+    height: 66px;
+    border: 2px solid black;
+    color: #fff;
+    font-size: 24px;
+}
+
+.community-item span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #000;
 }
