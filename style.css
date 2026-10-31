@@ -741,3 +741,26 @@ header {
     font-weight: 600;
     line-height: 28px;
 }
+
+.community-left .community-icon button {
+    display: inline-block;
+    width: 370px;
+    height: 80px;
+    padding: 24px 48px;
+    margin: 20px 0;
+    background-color: black;
+    box-shadow: 6px 6px 0 black;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.community-left .community-icon button:hover {
+    background-color: #f3aa00;
+    color: black;
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 0 black;
+}
